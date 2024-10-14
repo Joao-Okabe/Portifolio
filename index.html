@@ -41,28 +41,35 @@
     </nav>
     
     <!-- Barra Lateral -->
-    <div class="sidebar col-3">
-      <ul class="nav flex-column">
-          <div class="container">
-          <class="nav-item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="white" class="bi bi-circle-square" viewBox="0 0 16 16">
-              <path d="M0 6a6 6 0 1 1 12 0A6 6 0 0 1 0 6z"/>
-              <path d="M12.93 5h1.57a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1.57a6.953 6.953 0 0 1-1-.22v1.79A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 4h-1.79c.097.324.17.658.22 1z"/>
-            </svg>
-            <a class="nav-link text-white" href="#">Item 1</a>
-          <li class="nav-item">
-              <a class="nav-link text-white" href="#">Item 2</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link text-white" href="#">Item 3</a>
-          </li>
-      </ul>
+    
+    <button class="side-toggler" tybe="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#minhaSidebar">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+        
+    <div class="collapse sidebar-collapse col-3 sidebar" id="minhaSidebar">
+          <div class="sidebar-nav">
+            <div class="container text-center">
+              <class="nav-item">
+              <div class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="white" class="bi bi-circle-square" viewBox="0 0 16 16">
+                  <path d="M0 6a6 6 0 1 1 12 0A6 6 0 0 1 0 6z"/>
+                  <path d="M12.93 5h1.57a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1.57a6.953 6.953 0 0 1-1-.22v1.79A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 4h-1.79c.097.324.17.658.22 1z"/>
+                </svg>
+              </div>
+        </div>
+            <div style="color: white;">
+            <a href="#sobremim" class="nav-link navbrand-link">Sobre Mim</a>
+            <a href="#curriculo" class="nav-link navbrand-link">Currículo</a>
+            <a href="#" class="nav-link navbrand-link">Especialidades</a>
+            <a href="#" class="nav-link navbrand-link">Contato</a>
+            </div>
+        </div>
     </div>
-   </div> 
-  </nav>
-
+    
     <!-- Texto Sobre mim 1 -->
-    <div class="container mt-5" id="sobremim">
+    <div class="col-6 mt-5 offset-4" id="sobremim">
     <h1 class="white">Sobre Mim</h1>
       <p class="lead white">
         Olá, meu nome é João Antônio Okabe Van Berghem, mas você pode me chamar apenas de Tonho, eu sou um estudante de infórmatica na Etec de Itanhaém que é por sinal 
@@ -79,7 +86,7 @@
     <!-- Cards experimental 1 -->
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <div class="col-3 offset-3">
           <div class="card">
           <img src="https://picsum.photos/200?random=1" class="card-img-top">
             <h4 class="card-header">Cabeçalho</h4>  
