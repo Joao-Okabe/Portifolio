@@ -7,8 +7,16 @@ a{
     color: white;
 }
 
+.sidebar-nav{
+    padding: 15px;
+}
+
 .white{
 color: white;
+}
+
+.card{
+    margin-top: 30px;
 }
 
 .animacao{
@@ -35,7 +43,23 @@ animation-iteration-count: infinite;
 
 .sidebar {
     position: fixed;
-    width: 200px;
     height:100%;
     background-color: #343a40;
+}
+
+.sidebarbuttondiv{
+    background-color: #343a40;
+    position: fixed;
+    height: 48px;
+    width: 64px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.sidebarbutton{
+    background-color: #343a40;
+    border: none;
 }
