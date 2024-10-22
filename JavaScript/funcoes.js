@@ -30,7 +30,7 @@ function realizarDivi() {
     document.getElementById('resultado').innerHTML = "Resultado: " + resultado;
 }
 
-// Função que verifica o tipo de triângulo
+// Função que verifica o tipo de triângulo (Não está funcionando no momento)
 function tipoTriangulo() {
 // Pega os valores dos inputs e converte para números
 let lado1 = parseFloat(document.getElementById('a').value);
@@ -61,3 +61,27 @@ if (isNaN(a) || isNaN(b) || isNaN(c)) {
         document.getElementById('resultadot').innerHTML = "Os lados fornecidos não formam um triângulo válido.";
     }
 }
+
+// Mostrar código da Calculadora Básica
+function mostraresconder1() {
+    let texto = document.getElementById("calcbasica");
+    let botao = document.querySelector("button");
+
+    if (texto.style.display === "none") {
+      texto.style.display = "block";
+    } else {
+      texto.style.display = "none";
+    }
+  }
+
+// Mostrar código do Tipo do Triangulo
+function mostraresconder2() {
+    let texto = document.getElementById("tipotriangulo");
+    let botao = document.querySelector("button");
+
+    if (texto.style.display === "none") {
+      texto.style.display = "block";
+    } else {
+      texto.style.display = "none";
+    }
+  }

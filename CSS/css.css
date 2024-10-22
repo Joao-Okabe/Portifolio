@@ -23,6 +23,10 @@
 }
 
 /* Esilização dos botões de função */
+input[type=number]{
+  width: 300px;
+}
+
 .btnfunc{
   background-color: #f39c50;
   color: white;
@@ -59,6 +63,26 @@
   box-sizing: border-box;
 }
 
+.btnfuncxl{
+  background-color: #f39c50;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.btnfuncxl:hover{
+  width: 150px;
+  height: 60px;
+  border-bottom: #de8231 8px solid;
+  border-right: #de8231 8px solid;
+  box-sizing: border-box;
+}
+
+
+
 .container-btn{
   height: 100px;
   width: 1000px;
@@ -79,30 +103,15 @@
 
 /* Estilização da SideBar */
 .sidebar {
-    position: fixed;
-    height:100%;
-    background-color: #f39c50;
-}
-
-.sidebarbuttondiv{
-    background-color: #f39c50;
-    position: fixed;
-    height: 48px;
-    width: 64px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.sidebarbutton{
-    background-color: #f39c50;
-    border: none;
-}
-
-.sidebar-nav{
-    padding: 15px;
+  width: 250px;
+  height: 300px; /* Defina a altura que desejar */
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f8f9fa; /* Cor de fundo da sidebar */
+  border-right: 1px solid #ddd;
+  padding: 20px;
 }
 
 /* Responsividade dos textos (Cuidado ao alterar!) */
