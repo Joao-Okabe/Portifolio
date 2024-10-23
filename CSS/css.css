@@ -1,3 +1,18 @@
+body{
+  background-color: #220010;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h6,h5, h4, h3, h2, h1, p{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+}
+
 .navbarwhitebrandtext{
   color: white;
 }
@@ -7,7 +22,7 @@
 }
 
 .bgnav{
-  background-color: #de8231;
+  background-color: #FF481C;
 }
 
 .btnav{
@@ -22,33 +37,52 @@
   color: rgb(46, 46, 46);
 }
 
+/* Imagem section */
+.section1{
+  width: 100%;
+  height: 940px;
+  background-image: url(/Imagens/jbsection1.png);
+  background-repeat: no-repeat;
+}
+
 /* Esilização dos botões de função */
 input[type=number]{
-  width: 300px;
+  width: 290px;
+  color: #de8231;
+  border: 2px solid;
+  padding: 2%;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  border-radius: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
 }
 
 .btnfunc{
-  background-color: #f39c50;
-  color: white;
-  border: none;
+  background-color: white;
+  color:#de8231;
+  border:#de8231 2px solid;
   width: 100px;
   height: 50px;
   border-radius: 10px;
   box-sizing: border-box;
+  margin-right: 10px;
 }
 
 .btnfunc:hover{
   width: 120px;
   height: 60px;
-  border-bottom: #de8231 8px solid;
-  border-right: #de8231 8px solid;
+  border-bottom: #f39c50 8px solid;
+  border-right: #f39c50 8px solid;
   box-sizing: border-box;
 }
 
 .btnfunclongo{
-  background-color: #f39c50;
-  color: white;
-  border: none;
+  background-color: #ffffff;
+  color: #de8231;
+  border: #de8231 2px solid;
   width: 220px;
   height: 50px;
   border-radius: 10px;
@@ -64,9 +98,9 @@ input[type=number]{
 }
 
 .btnfuncxl{
-  background-color: #f39c50;
-  color: white;
-  border: none;
+  background-color: #ffffff;
+  color: #de8231;
+  border: #de8231 2px solid;
   width: 150px;
   height: 50px;
   border-radius: 10px;
@@ -103,16 +137,54 @@ input[type=number]{
 
 /* Estilização da SideBar */
 .sidebar {
-  width: 250px;
-  height: 300px; /* Defina a altura que desejar */
-  position: fixed;
+  width: 100px;
+  height: 600px;
+  padding: 12px;
+  border: none;
+  position: fixed; 
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #f8f9fa; /* Cor de fundo da sidebar */
-  border-right: 1px solid #ddd;
-  padding: 20px;
 }
+
+.fundosvg{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #FF481C;
+  margin-bottom: 10px;
+  top: 50%;
+}
+
+.fundosvg:hover{
+  background-color: #ffffff;
+  border: #FF481C 3px solid;
+  display: inline-block;
+}
+
+svg{
+  fill: white;
+  top: 50%;
+}
+
+svg:hover{
+  fill: #FF481C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsividade dos textos (Cuidado ao alterar!) */
   @media (max-width: 576px) {

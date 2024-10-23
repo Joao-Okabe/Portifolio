@@ -3,52 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidebar Centralizada Esquerda</title>
-  <!-- Incluindo Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+  <title>Imagem de Fundo Responsiva</title>
   <style>
-    /* Customização para centralizar a sidebar verticalmente e fixar na esquerda */
-    .sidebar {
-      width: 250px;
-      height: 300px; /* Defina a altura que desejar */
-      position: fixed;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: #f8f9fa; /* Cor de fundo da sidebar */
-      border-right: 1px solid #ddd;
-      padding: 20px;
+    .bg-container {
+      width: 100%;       
+      height: 940px;      
+      background-image: url('/Imagens/imagemdefundoteste.png');
+      background-size: cover;  
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+      .bg-container {
+        height: 200px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="sidebar">
-    <h4>Sidebar</h4>
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Link 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 3</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 4</a>
-      </li>
-    </ul>
-  </div>
+    <div class="bg-container">
+    
+    </div>
 
-  <!-- Conteúdo da página -->
-  <div class="container" style="margin-left: 260px;">
-    <h1>Conteúdo Principal</h1>
-    <p>Este é o conteúdo principal da página.</p>
-  </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
