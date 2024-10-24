@@ -3,7 +3,7 @@ body{
   font-family: "Hanken Grotesk", sans-serif;
 }
 
-h6,h5, h4, h3, h2, h1, p{
+.whitetext{
   color: white;
 }
 
@@ -11,6 +11,27 @@ a{
   text-decoration: none;
   color: white;
   margin-right: 5px;
+}
+
+
+#sobremim{
+  margin-top: 100px;
+}
+
+.card{
+  border: none;
+}
+
+.footercolor{
+  background-color: #1a010c;
+  color: #1a010c;
+}
+
+
+
+.navbrand1{
+  width: 128px;
+  height: 128px;
 }
 
 .navbarwhitebrandtext{
@@ -28,7 +49,7 @@ a{
 .btnav{
   color: rgb(179, 179, 179);
   background-color: #ffffff;
-  padding: 10px;
+  padding: 15px;
   display: center;
 
 }
@@ -41,15 +62,30 @@ a{
 .section1{
   width: 100%;
   height: 940px;
-  background-image: url(/Imagens/jbsection1.png);
+  background-image: url(/Imagens/fundosection1.png);
   background-repeat: no-repeat;
+}
+
+.textsection1{
+  padding: 100px;
+}
+
+.textsection1p2{
+  padding: 100px;
+}
+
+.linksection1{
+  height: 300px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Esilização dos botões de função */
 input[type=number]{
   width: 290px;
-  color: #de8231;
-  border: 2px solid;
+  color: #FF481C;
+  border: #FF481C 2px solid;
   padding: 2%;
   -moz-appearance: textfield;
   appearance: textfield;
@@ -62,8 +98,8 @@ input[type=number]::-webkit-inner-spin-button{
 
 .btnfunc{
   background-color: white;
-  color:#de8231;
-  border:#de8231 2px solid;
+  color:#FF481C;
+  border:#FF481C 2px solid;
   width: 100px;
   height: 50px;
   border-radius: 10px;
@@ -74,15 +110,15 @@ input[type=number]::-webkit-inner-spin-button{
 .btnfunc:hover{
   width: 120px;
   height: 60px;
-  border-bottom: #f39c50 8px solid;
-  border-right: #f39c50 8px solid;
+  border-bottom: #FF481C 8px solid;
+  border-right: #FF481C 8px solid;
   box-sizing: border-box;
 }
 
 .btnfunclongo{
   background-color: #ffffff;
-  color: #de8231;
-  border: #de8231 2px solid;
+  color: #FF481C;
+  border: #FF481C 2px solid;
   width: 220px;
   height: 50px;
   border-radius: 10px;
@@ -92,15 +128,15 @@ input[type=number]::-webkit-inner-spin-button{
 .btnfunclongo:hover{
   width: 230px;
   height: 60px;
-  border-bottom: #de8231 8px solid;
-  border-right: #de8231 8px solid;
+  border-bottom: #FF481C 8px solid;
+  border-right: #FF481C 8px solid;
   box-sizing: border-box;
 }
 
 .btnfuncxl{
   background-color: #ffffff;
-  color: #de8231;
-  border: #de8231 2px solid;
+  color: #FF481C;
+  border: #FF481C 2px solid;
   width: 150px;
   height: 50px;
   border-radius: 10px;
@@ -110,8 +146,8 @@ input[type=number]::-webkit-inner-spin-button{
 .btnfuncxl:hover{
   width: 150px;
   height: 60px;
-  border-bottom: #de8231 8px solid;
-  border-right: #de8231 8px solid;
+  border-bottom: #FF481C 8px solid;
+  border-right: #FF481C 8px solid;
   box-sizing: border-box;
 }
 
@@ -138,8 +174,7 @@ input[type=number]::-webkit-inner-spin-button{
 /* Estilização da SideBar */
 .sidebar {
   width: 100px;
-  height: 600px;
-  padding: 12px;
+  height: 300px;
   border: none;
   position: fixed; 
   left: 0;
@@ -148,26 +183,27 @@ input[type=number]::-webkit-inner-spin-button{
 }
 
 .fundosvg{
-  width: 60px;
+  width: 90px;
   height: 60px;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #FF481C;
   margin-bottom: 10px;
-  top: 50%;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
 }
 
 .fundosvg:hover{
   background-color: #ffffff;
-  border: #FF481C 3px solid;
-  display: inline-block;
+  outline: #FF481C 2px solid;
 }
 
-svg{
+.svgsidebar{
   fill: white;
-  top: 50%;
 }
 
-svg:hover{
+.svgsidebar:hover{
   fill: #FF481C;
 }
 
