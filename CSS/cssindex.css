@@ -23,6 +23,10 @@ a{
 .footercolor{
   background-color: #1a010c;
   color: #1a010c;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 25px;
 }
 
 /* Estilização Navbar */
@@ -104,7 +108,14 @@ a{
 }
 
 .section2{
-  background-color: #290315;
+  background-color: #391727;
+  width: 100%;
+  height: 1200px;
+  padding-top: 50px;
+}
+
+.section3{
+  background-color: #391727;
   width: 100%;
   height: 900px;
   padding-top: 50px;
@@ -152,6 +163,12 @@ a{
   background-color: #ff7b13;
 }
 
+.porcentagemBlender{
+  height: 10px;
+  width: 5%;
+  background-color: #ff7b13;
+}
+
 .buttonparaotopo{
   width: 48px;
   height: 48px;
@@ -183,6 +200,7 @@ a{
 /* Cards Produto */
 .card{
   border: none;
+  border-radius: 0px;
   height: 250px;
   position: relative;
   transition: filter 0.3s ease;
