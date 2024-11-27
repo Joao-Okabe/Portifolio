@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- Arimo (texto) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" type="imagex/png" href="/Icones/J.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/cssindex.css">
@@ -15,11 +18,10 @@
     <script src="/JavaScript/jsindex.js"></script>
 
     <!-- Navbar -->
-    <head>
-      <nav class="navbar bgnav navbar-expand-md">
+    <nav class="navbar bgnav navbar-expand-md sticky-top">
 
-        <a href="#" class="navbar-brand">
-          <img class="navbrand1" src="/Imagens/JB BRAND LOGO.png" alt="JB">
+        <a href="#" class="navbar-brand mx-5">
+          <img class="navbrand1" src="/Imagens/Logo.png" alt="JB">
           <span class="navbar-brand h1 navbarwhitebrandtext">JB Sites&Interfaces</span>
         </a>
           
@@ -31,42 +33,23 @@
          
         <div class="collapse navbar-collapse" id="minhaNavbar">
             
-          <div class="d-flex justify-content-end">
+          <li class="nav-item dropdown list-unstyled">
+              <a class="nav-link dropdown-toggle" href="#" 
+              id="dropdownMenuLink" role="button" 
+              data-bs-toggle="dropdown" aria-expanded="false">Áreas</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Portifolio</a>
+                <a class="dropdown-item" href="#">Teste de Java</a>
+                <a class="dropdown-item" href="#">Option 3</a>
+              </ul>
+            </li>
+            
             <a class="mx-3" href="#sobremim">Sobre</a>
-            <a class="mx-3" href="#skills">Skills</a>
-            <a class="mx-3" href="#">Contatos</a>
-          </div>
+            <a class="mx-3" href="#habilidades">Habilidades</a>
+            <a class="mx-3" href="#contato">Contatos</a>
 
         </div>
     
-      </nav>
-    </head>
-    <!-- //////////////// -->
-
-    <!-- Sidebar v2 -->
-    <nav class="flex-column">
-    
-      <div class="sidebar" id="minhaSidebar">
-        
-        <div class="fundosvg">
-          <a href="/index.html">
-            <svg class="svgsidebar" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-              <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-            </svg>
-          </a>
-        </div>
-        
-        <div class="fundosvg">
-          <a href="/HTML/conhecimentojs.html">
-            <svg class="svgsidebar" xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi bi-filetype-js" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.2 1.2 0 0 1-.111-.449h.765a.58.58 0 0 0 .255.384q.105.073.249.114.143.041.319.041.246 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.151-.12-.462-.193l-.619-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.528-.422.336-.15.776-.149.457 0 .78.152.324.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.247-.181.9.9 0 0 0-.369-.068q-.325 0-.513.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .405.175l.62.143q.327.075.566.211.24.136.375.358t.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375m-3.104-.033A1.3 1.3 0 0 1 0 14.791h.765a.6.6 0 0 0 .073.27.5.5 0 0 0 .454.246q.285 0 .422-.164.138-.165.138-.466v-2.745h.79v2.725q0 .66-.357 1.005-.354.345-.984.345a1.6 1.6 0 0 1-.569-.094 1.15 1.15 0 0 1-.407-.266 1.1 1.1 0 0 1-.243-.39"/>
-            </svg>
-          </a>
-        </div>
-
-      </div>
-
     </nav>
     <!-- //////////////// -->
 
@@ -80,87 +63,71 @@
 
     <!-- Sessão 1 - Inicio do site -->
     <div class="section1">
-      <div class="row offset-1">
-      <div class="col-md-3 col-sm-10">
-      <div class="mt-5">
-          <br>
-          <br>
-          <br>
-          <br>
-          <h1>
-            JB SITES&INTERFACES
-          </h1>
-      </div>
-
-      <div class="mt-5">
-          <br>
-          <br>
-          <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatum error minima vel, consequatur iste praesentium quibusdam mollitia deleniti possimus laborum maxime iusto officia et veniam impedit, libero quam nisi accusantium ducimus consequuntur nulla id. Ducimus ab inventore nisi consequuntur voluptatem nam dolore excepturi nulla illum, quibusdam voluptates unde officia!
-          </h5>
-      </div>
-
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-
-      <div class="d-flex">
-
-            <div class="mx-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-              </svg>
-            </div>
+      <div class="row offset-2">
+        <div class="col-md-3 col-sm-10">
           
-            <div class="mx-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-discord" viewBox="0 0 16 16">
-              <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
-            </svg>
-            </div>
+          <div class="mt-5">
+            <h1>JB SITES&INTERFACES</h1>  
+          </div>
 
-            <div class="mx-3">
-            <a href="/index.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-              </svg>
-            </a>
-            </div>
+          <div class="mt-5">
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatum error minima vel, consequatur iste praesentium quibusdam mollitia deleniti possimus laborum maxime iusto officia et veniam impedit, libero quam nisi accusantium ducimus consequuntur nulla id. Ducimus ab inventore nisi consequuntur voluptatem nam dolore excepturi nulla illum, quibusdam voluptates unde officia!
+            </h5>    
+          </div>
 
-            <div class="mx-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-            </svg>
-            </div>
+          <div class="d-flex">
 
-            <div class="mx-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg>
-            </div>
+                <div class="mx-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                  </svg>
+                </div>
+              
+                <div class="mx-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-discord" viewBox="0 0 16 16">
+                  <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                </svg>
+                </div>
 
-            <div class="mx-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-              </svg>
-            </div>
-      
+                <div class="mx-3">
+                <a href="/index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg>
+                </a>
+                </div>
+
+                <div class="mx-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+                </div>
+
+                <div class="mx-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+                </div>
+
+                <div class="mx-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg>
+                </div>
+          
+          </div>
+
+        </div>
       </div>
-      </div>
-      </div>
-    </div> 
+    </div>
     <!-- //////////////// -->
 
     <!-- Section 2 -Texto Sobre mim -->
-    <div class="section2">
-    <div id="sobremim">
+    <div class="section2" id="sobremim">
     <h1 class="whitetext offset-2 mt-5">Sobre Mim</h1>
     <p class="whitetext offset-2 col-8 mb-5">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi deleniti officia illum vitae consequatur, alias ad voluptatem modi nesciunt obcaecati non culpa reiciendis provident. Necessitatibus quaerat temporibus praesentium officiis reprehenderit. Temporibus pariatur ex et enim? Excepturi commodi pariatur, ratione placeat inventore, odio exercitationem reprehenderit ipsa animi vitae eaque ullam?
     </p>
-    </div>
    
     <div class="d-flex">
       <div class="offset-2">
@@ -240,8 +207,8 @@
     </div>
     <!-- //////////////// -->
 
-    <!-- Section 3 - Skills -->
-    <div class="section3" id="skills">
+    <!-- Section 3 - Habilidades -->
+    <div class="section3" id="habilidades">
     <div class="offset-2 mt-5">
         
         <h1>Skills</h1>
@@ -415,64 +382,24 @@
       </div>
       </div>
 
-      <div class="row g-0">
-
-        <div class="col-md-2">
-          <div class="card text-start">
-            <img class="card-img">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Body</p>
-            </div>
-          </div>
-        </div>  
-        
-        <div class="col-md-2">
-          <div class="card text-start">
-            <img class="card-img">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Body</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card text-start">
-            <img class="card-img">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Body</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
     </div>
+    <!-- //////////////// -->
 
     <!-- Contato -->
-    <div class="offset-2 mt-5 mb-5">
-      <form>
-
-        <div class="offset-4">
-          <label class="whitetext" for="name">Nome completo</label><br>
-          <input  class=" input col-3" type="text"><br>
+    <form class="offset-2 my-5" id="contato">
+          
+        <div class="row g-3 my-2">
+          <input class="input col-3" type="text" placeholder="Nome Completo"><br>
+          <input class="input col-3" type="text" placeholder="Empresa"><br> 
         </div>
             
-        <div class="offset-6">
-          <label class="whitetext" for="empresa">Empresa</label><br>    
-          <input class="input col-3" type="text"><br> 
+        <div class="row g-3 my-2">
+          <input class="input col-3" type="text" placeholder="Telefone para contato"><br>
+          <input class="input col-3" type="text" placeholder="Email para contato"><br>
         </div>
-               
 
-        <label class="whitetext" for="telefonecontato">Telefone para contato</label><br>
-        <input class="input col-3" type="text"><br>
-
-        <label class="whitetext" for="emailcontato">Email para contato</label><br>
-        <input class="input col-3" type="text"><br>
-
-        <label class="whitetext" for="estado">Estado</label><br>
-        <select class="input col-3" id="estado" name="estado" required>
+        <div class="row g-3 my-2">
+          <select class="input col-3" id="estado" name="estado" required>
             <option value="">Selecione...</option>
             <option value="AC">Acre (AC)</option>
             <option value="AL">Alagoas (AL)</option>
@@ -501,12 +428,14 @@
             <option value="SP">São Paulo (SP)</option>
             <option value="SE">Sergipe (SE)</option>
             <option value="TO">Tocantins (TO)</option>
-        </select><br>
+          </select><br> 
+          <input class="input col-3" type="text" placeholder="Cidade"><br>  
+        </div>
+        
+        <input type="submit" class="btn btn-primary">
 
-        <label class="whitetext" for="name">Cidade</label><br>
-        <input class="input col-3" type="text"><br>
-      </form>  
-    </div>
+    </form>  
+    <!-- //////////////// -->
 
     <!-- Rodapé -->
     <footer class="footercolor">
@@ -514,6 +443,7 @@
             Todos os direitos reservados de JB Sites&Interfaces®.
             </p>
     </footer>
+    <!-- //////////////// -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

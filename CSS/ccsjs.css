@@ -1,6 +1,14 @@
+@font-face {
+  font-family: Boston Angel;
+  src: url(/Fontes/Boston\ Angel\ Regular.otf) format(otf);
+
+  font-family: Arimo;
+  src: url(/Fontes/Arimo-Regular.ttf) format(ttf);
+}
+
 body{
     background-color: #220010;
-    font-family: "Hanken Grotesk", sans-serif;
+    font-family: "Arimo", sans-serif;
   }
 
 a{
