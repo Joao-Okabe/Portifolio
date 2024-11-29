@@ -1,0 +1,120 @@
+body{
+  background-color: #ffffff;
+  font-family: "Arimo", arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+}
+
+/* Footer */
+.footercolor{
+  background-color: #474847;
+  color: white;
+  width: 100%;
+  height: 100px;
+  padding: 40px;
+  display: flex;
+}
+
+/* Estilização Navbar */
+.nav-item{
+  color: white;
+}
+
+.navbarwhitebrandtext{
+  color: white;
+}
+
+.navbarwhitebrandtext:hover{
+  color: white;
+}
+
+.bgnav{
+  background-color: #393C3D;
+  padding: 15px;
+}
+
+.btnav{
+  color: rgb(179, 179, 179);
+  background-color: #ffffff;
+  padding: 15px;
+  display: center;
+}
+
+.btnav:hover{
+  color: rgb(46, 46, 46);
+}
+
+/* Imagem section */
+.section1{
+  width: 100%;
+  height: 940px;
+  background-repeat: no-repeat;
+}
+
+#sobremim{
+  width: 100%;
+  height: 1000px;
+  padding-top: 50px;
+}
+
+#hobbies{
+  background-color: #919190;
+  height: 800px;
+  padding-top: 50px;
+}
+
+#contato{
+  background-image:url(/Imagens//Banner\ contato.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+
+/* Cards Produto */
+.card{
+  border: none;
+  border-radius: 0px;
+  height: 250px;
+  transition: filter 0.5s ease-in-out;
+}
+
+.card:hover{
+  filter: brightness(0.5);
+}
+
+/* Formulario de contato */
+.input{
+  width: 100%;
+  height: 50px;
+}
+
+.butmit{
+  height: 50px;
+  width: 200px;
+  margin-top: 30px;
+  
+}
+
+/* Responsividade dos textos (Cuidado ao alterar!) */
+  @media (max-width: 576px) {
+    p {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    p {
+      font-size: 20px;
+    }
+  }
