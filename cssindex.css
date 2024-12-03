@@ -1,12 +1,26 @@
 body{
-  background-color: #ffffff;
+  background-color: white;
   font-family: "Arimo", arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
 
 a{
   text-decoration: none;
   color: white;
   margin-right: 5px;
+  transition: 0.3s;
+}
+a:hover{
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.704);
+}
+
+.white{
+  color: white;
+}
+
+.white:hover{
+  color: white;
 }
 
 /* Footer */
@@ -20,18 +34,6 @@ a{
 }
 
 /* Estilização Navbar */
-.nav-item{
-  color: white;
-}
-
-.navbarwhitebrandtext{
-  color: white;
-}
-
-.navbarwhitebrandtext:hover{
-  color: white;
-}
-
 .bgnav{
   background-color: #393C3D;
   padding: 15px;
@@ -43,22 +45,27 @@ a{
   padding: 15px;
   display: center;
 }
-
-.btnav:hover{
-  color: rgb(46, 46, 46);
-}
-
 /* Imagem section */
-.section1{
+#home{
+  margin-top: 0px;
   width: 100%;
-  height: 940px;
-  background-repeat: no-repeat;
+  height: 890px;
+  background-color: #626262;
+  box-shadow: #393C3D 0px 10px 10px;
+}
+#VideoInicial{
+  max-width: 100%;
+  height: auto;
+  outline: none;
+  border: none;
 }
 
 #sobremim{
   width: 100%;
   height: 1000px;
   padding-top: 50px;
+  margin-top: 50px;
+  box-shadow: #000000 0px 10px 10px;
 }
 
 #hobbies{
@@ -68,7 +75,7 @@ a{
 }
 
 #contato{
-  background-image:url(/Imagens//Banner\ contato.png);
+  background-image:url(/Images//Banner\ contato.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
@@ -83,17 +90,27 @@ a{
   transition: filter 0.5s ease-in-out;
 }
 
+#bghobbies1{
+  background-image: url(/Images/bghobbies1.jpg);
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
 .card:hover{
   filter: brightness(0.5);
 }
 
 /* Formulario de contato */
-.input{
+#formin{
   width: 100%;
   height: 50px;
 }
+#formin:focus{
+  outline: #2a6280 1px solid;
+}
 
-.butmit{
+#butmit{
   height: 50px;
   width: 200px;
   margin-top: 30px;
