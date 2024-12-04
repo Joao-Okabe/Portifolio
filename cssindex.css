@@ -1,5 +1,4 @@
 body{
-  background-color: white;
   font-family: "Arimo", arial, sans-serif;
   padding: 0px;
   margin: 0px;
@@ -45,13 +44,14 @@ a:hover{
   padding: 15px;
   display: center;
 }
+
 /* Imagem section */
 #home{
   margin-top: 0px;
   width: 100%;
-  height: 890px;
+  height: auto;
   background-color: #626262;
-  box-shadow: #393C3D 0px 10px 10px;
+  box-shadow: #393C3D 0px 10px 10px 0px;
 }
 #VideoInicial{
   max-width: 100%;
@@ -62,15 +62,15 @@ a:hover{
 
 #sobremim{
   width: 100%;
-  height: 1000px;
+  height: 1500px;
   padding-top: 50px;
   margin-top: 50px;
   box-shadow: #000000 0px 10px 10px;
 }
 
-#hobbies{
+#topcoisas{
   background-color: #919190;
-  height: 800px;
+  height: 1200px;
   padding-top: 50px;
 }
 
@@ -82,23 +82,101 @@ a:hover{
 }
 
 
-/* Cards Produto */
+/* Cards */
 .card{
   border: none;
   border-radius: 0px;
   height: 250px;
   transition: filter 0.5s ease-in-out;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-#bghobbies1{
-  background-image: url(/Images/bghobbies1.jpg);
-  justify-content: center;
-  max-width: 100%;
-  height: auto;
-}
-
 .card:hover{
-  filter: brightness(0.5);
+  transform: scale(1.05);
+}
+
+.card-body{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-body{
+  transform: translateY(0);
+}
+
+.avatarmine{
+  background-image: url(/Images/1.png);
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.avatarrtx{
+  background-image: url(/Images/2.png);
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.avaarpotter{
+  background-image: url(/Images/3.png);
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.avatarkemy{
+  background-image: url(/Images/4.png);
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.avatarchinelo{
+  background-image: url(/Images/5.png);
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.avatarsnorlax{
+  background-image: url(/Images/6.png);
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.avataroculus{
+  background-image: url(/Images/7.png);
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.avatararmas{
+  background-image: url(/Images/8.png);
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.avatarbola{
+  background-image: url(/Images/9.png);
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
 }
 
 /* Formulario de contato */
