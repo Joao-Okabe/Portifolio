@@ -221,29 +221,45 @@ a:hover{
   height: auto;
 }
 
-#skhtml{
-  height: 45px;
-  width: 90%;
-  background-color: #2a6280;
-}
-
-#skcss{
-  height: 15px;
-  width: 75%;
-  background-color: #2a6280;
-}
-
-#skjs{
-  height: 15px;
-  width: 33%;
-  background-color: #2a6280;
-}
-
 /* Responsividade dos textos (Cuidado ao alterar!) */
   @media (max-width: 576px) {
     p {
       font-size: 12px;
     }
+    
+    #home{
+      height: auto;
+    }
+    #VideoInicial{
+      height: auto;
+    }
+    
+    #sobremim{
+      height: auto;
+    }
+    
+    #topcoisas{
+      height: auto;
+    }
+    
+    #carreira{
+      height: auto;
+    }
+    
+    #habilidades{
+      height: auto;
+    }
+    
+    #projetos{
+      height: auto;
+    }
+
+    #contato{
+      background-image: none;
+      height: auto;
+    }
+
+
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
