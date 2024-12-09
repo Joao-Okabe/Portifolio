@@ -73,8 +73,13 @@ a:hover{
   padding-top: 50px;
 }
 
+#escolaridade{
+  width: 100%;
+  height: 700px;
+}
+
 #carreira{
-  height: 1000px;
+  height: 900px;
   width: 100%;
 }
 
@@ -226,6 +231,10 @@ a:hover{
     p {
       font-size: 12px;
     }
+
+    hr{
+      display: none;
+    }
     
     #home{
       height: auto;
@@ -236,29 +245,39 @@ a:hover{
     
     #sobremim{
       height: auto;
+      padding: 15px;
     }
     
     #topcoisas{
       height: auto;
+      padding: 15px;
+    }
+
+    #escolaridade{
+      height: auto;
+      padding: 15px;
     }
     
     #carreira{
       height: auto;
+      padding: 15px;
     }
     
     #habilidades{
       height: auto;
+      padding: 15px;
     }
     
     #projetos{
       height: auto;
+      padding: 15px;
     }
 
     #contato{
       background-image: none;
       height: auto;
+      padding: 15px;
     }
-
 
   }
 
